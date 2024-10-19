@@ -1,0 +1,673 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: inline-block;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.topnav {
+    display: inline-block;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav a {
+    margin: 0 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+nav a:hover{
+    margin: 0 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: grey 0px 0px 10px;
+    border-radius: 10px;
+    padding: 3px;
+    transition: ease-in-out 0.3s;
+    transform: scale(2.o);
+    display: inline-block;
+}
+
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.test {
+    background-color: #f4f4f4;
+    display: contents;
+    width: 83%;
+}
+
+.featured-article {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.featured-article img {
+    width: 50%;
+    height: auto;
+    display: absolute;
+    top: 0;
+    left: 0;
+}
+
+.featured-article article h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-left: 220px;
+    display: flex;
+}
+
+.featured-article article h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-left: 220px;
+    display: flex;
+}
+
+.featured-article article p {
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 220px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.other-articles {
+    flex: 1;
+}
+
+.other-articles h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.other-articles ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.other-articles ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+.other-articles ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 20px;
+}
+
+.circle-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.circle:hover {
+    width: 103px;
+    height: 103px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    display: absolute;
+    box-shadow: #555 0px 0px 10px;
+    transition: ease-in-out 0.3s;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+/* Topik Terkini */
+.topik-terkini {
+    padding: 20px;
+}
+
+.topik-terkini h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.topik-buttons button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.topik-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.search-article {
+    margin-top: 10px;
+}
+
+.search-article input[type="text"] {
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-article a {
+    margin-left: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Artikel Terpopuler */
+.artikel-terpopuler {
+    padding: 20px;
+}
+
+.artikel-terpopuler h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.artikel-terpopuler .artikel {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.artikel-terpopuler .artikel h3 {
+    font-size: 18px;
+}
+
+/* Artikel Terbaru */
+.artikel-terbaru {
+    padding: 20px;
+}
+
+.artikel-terbaru h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.artikel-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.artikel-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Section Team */
+.team {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.team p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Footer (same as before) */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+/* Section Contact */
+.contact {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact-form form {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer (same as before) */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+/* Section About Us */
+.about-us {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vision-mission p,
+.vision-mission ul {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.vision-mission ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Team Section */
+.team {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.team p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* History and Goal Section */
+.history-goal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-goal h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.history-goal p {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Footer (same as before) */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Efek animasi untuk elemen saat muncul di viewport */
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
+
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gaya untuk accordion */
+.accordion {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.2s ease;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.accordion.active {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B'; /* Unicode plus sign */
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+
+.accordion.active:after {
+    content: '\2212'; /* Unicode minus sign */
+}
+
+.panel {
+    padding: 0 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
