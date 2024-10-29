@@ -3,78 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team - Website Kesehatan</title>
+    <title>Website Kesehatan</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Header -->
-    <header>
-        <img src="logo.jpg" width="50px">
-        <div class="logo">HEALTHCARE WEBSITE</div>
-        <input type="text" placeholder="Cari artikel, dokter, obat dan lainnya...">
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="artikel.html">ARTIKEL</a>
-            <a href="our-team.html" class="active">OUR TEAM</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="about-us.html">ABOUT US</a>
-        </nav>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center header-lenght">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" width="70px" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" class="form-control" placeholder="Cari artikel, dokter, obat dan lainnya..." id="searchBar">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">HOME</a>
+                        <a class="nav-item nav-link" href="artikel.html">ARTIKEL</a>
+                        <a class="nav-item nav-link active" href="our-team.html">OUR TEAM</a>
+                        <a class="nav-item nav-link" href="contact.html">CONTACT</a>
+                        <a class="nav-item nav-link" href="about-us.html">ABOUT US</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
-
-    <!-- Team Section -->
-    <section class="team">
-        <h2>Meet Our Team</h2>
-        <p>Tim profesional kami siap membantu Anda dalam menjaga kesehatan dengan layanan terbaik.</p>
-
-        <div class="team-container">
-            <!-- Team Member 1 -->
-            <div class="team-member">
-                <img src="darrane.jpg" alt="Foto Tim">
+    
+    <!-- Team -->
+    <section class="team container mt-5">
+        <h2 class="text-center mb-4 section-idea">Meet Our Team</h2>
+        <p class="text-center">Tim profesional kami siap membantu Anda dalam menjaga kesehatan dengan layanan terbaik.</p>
+        <div class="row team-container">
+            <div class="col-md-4 col-sm-6 team-member text-center">
+                <img src="img/darrane.jpg" alt="Foto Tim" class="img-about rounded-circle">
                 <h3>Darrane. MMR</h3>
                 <p>Manajer</p>
             </div>
-
-            <!-- Team Member 2 -->
-            <div class="team-member">
-                <img src="christhian.jpg" alt="Foto Tim">
+            <div class="col-md-4 col-sm-6 team-member text-center">
+                <img src="img/christhian.jpg" alt="Foto Tim" class="img-about rounded-circle">
                 <h3>Dr. Christian</h3>
                 <p>Spesialis Obat-obatan</p>
             </div>
-
-            <!-- Team Member 3 -->
-            <div class="team-member">
-                <img src="taufik.jpg" alt="Foto Tim">
+            <div class="col-md-4 col-sm-6 team-member text-center">
+                <img src="img/taufik.jpg" alt="Foto Tim" class="img-about rounded-circle">
                 <h3>Dr. Taufik</h3>
                 <p>Spesialis Olahraga</p>
             </div>
-
-            <!-- Team Member 4 -->
-            <div class="team-member">
-                <img src="minerva.jpg" alt="Foto Tim">
+            <div class="col-md-4 col-sm-6 team-member text-center">
+                <img src="img/minerva.jpg" alt="Foto Tim" class="img-about rounded-circle">
                 <h3>Dr. Minerva</h3>
                 <p>Spesialis Gigi</p>
             </div>
-            <!-- Team Member 5 -->
-            <div class="team-member">
-                <img src="hana.jpg" alt="Foto Tim">
+            <div class="col-md-4 col-sm-6 team-member text-center">
+                <img src="img/hana.jpg" alt="Foto Tim" class="img-about rounded-circle">
                 <h3>Dr. Hana</h3>
                 <p>Umum</p>
-             </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="#">FAQ</a>
-            <a href="#">Syarat dan Ketentuan</a>
-            <a href="#">Kebijakan Privasi</a>
-            <a href="#">Media</a>
-            <a href="#">Relasi Perusahaan</a>
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Bersama kami, Kesehatan selalu terdepan!</p>
+                    <ul class="footer-links list-inline">
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                        <li class="list-inline-item"><a href="#">Syarat dan Ketentuan</a></li>
+                        <li class="list-inline-item"><a href="#">Kebijakan Privasi</a></li>
+                        <li class="list-inline-item"><a href="#">Media</a></li>
+                        <li class="list-inline-item"><a href="#">Relasi Perusahaan</a></li>
+                        <li class="list-inline-item"><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <p>© 2024 Website Kesehatan. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p class="social-media">
+                        <a href="https://www.facebook.com/HalodocID/">Facebook</a> |
+                        <a href="#https://twitter.com/HaloDocID">Twitter</a> |
+                        <a href="https://www.instagram.com/halodoc/">Instagram</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <p>Bersama kami, Kesehatan selalu terdepan!</p>
     </footer>
-
 </body>
 </html>
